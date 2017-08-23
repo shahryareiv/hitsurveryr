@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "unidirect <- function(){\n\n}\n",
+    "created" : 1502716335639.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4134818150",
+    "id" : "D04B9888",
+    "lastKnownWriteTime" : 1502716418,
+    "last_content_update" : 1502716418354,
+    "path" : "~/Google Drive/Academics/_my_codes/healthsurveryr/R/normalize.R",
+    "project_path" : "R/normalize.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"View Questionnaires\"\noutput: html_notebook\n---\n\n#SKL\n```{r}\nrequire(dplyr)\nskl %>% rowwise() %>% print()\nprint(Reduce(function (x,y) paste(x,y,sep = ','),skl))\n\n```\n",
+    "created" : 1502283215659.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2853617567",
+    "id" : "B2A83A14",
+    "lastKnownWriteTime" : 1502283922,
+    "last_content_update" : 1502283922275,
+    "path" : "~/Google Drive/Academics/_my_codes/healthsurveryr/R/view.Rmd",
+    "project_path" : "R/view.Rmd",
+    "properties" : {
+        "chunk_output_type" : "inline",
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

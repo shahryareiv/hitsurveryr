@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "# # Just uncomment for short run\n\n# library(devtools)\n\n## if you need the list of files\n# cat(sapply(list.files('R'), function(x){paste('* ',x,'\\n',sep = '')}))\n\n\n##make the answers first then the questionnaires ----\n#source('answers_create.R')\n#source('q_skl.R')\n\n## store data ----\n#devtools::use_data(answers, overwrite = TRUE)\n#devtools::use_data(skl, overwrite = TRUE)\n\n\n## package build ----\n# devtools::use_vignette(\"singleverbr-vignette\")\n# devtools::load_all()\n# devtools::use_testthat()\n#\n# devtools::build()\n# devtools::document()\n# devtools::build_vignettes()\n# devtools::test()\n# devtools::install()\n# devtools::load_all()\n\n",
+    "created" : 1502177715785.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2158740018",
+    "id" : "DCEFBC6D",
+    "lastKnownWriteTime" : 1502284723,
+    "last_content_update" : 1502284723726,
+    "path" : "~/Google Drive/Academics/_my_codes/healthsurveryr/R/install.R",
+    "project_path" : "R/install.R",
+    "properties" : {
+        "docOutlineVisible" : "1",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

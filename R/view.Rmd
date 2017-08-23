@@ -1,0 +1,12 @@
+---
+title: "View Questionnaires"
+output: html_notebook
+---
+
+#SKL
+```{r}
+require(dplyr)
+skl %>% rowwise() %>% print()
+print(Reduce(function (x,y) paste(x,y,sep = ','),skl))
+
+```

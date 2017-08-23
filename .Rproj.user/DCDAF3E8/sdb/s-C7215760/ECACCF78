@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#' Binds a qeustionnaire with a data.df\n#'\n#' @param data.df\n#' @param questionnaire.name\n#'\n#' @return\n#' @export\n#'\n#' @examples\nmatch_ques_data <- function(data.df, questionnaire.name){\n\n  if (questionnaire.name == 'skl'){\n    colnames(data.df) <- healthsurveryr::skl[['name.id']]\n  }else{\n    stop('Could not find the specified questionnaire!')\n  }\n\n  return(data.df)\n\n}\n",
+    "created" : 1502716509288.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3086488161",
+    "id" : "ECACCF78",
+    "lastKnownWriteTime" : 1502718324,
+    "last_content_update" : 1502718324420,
+    "path" : "~/Google Drive/Academics/_my_codes/healthsurveryr/R/match_ques_data.R",
+    "project_path" : "R/match_ques_data.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

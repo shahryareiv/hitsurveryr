@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "require(dplyr)\nrequire(tibble)\n\n\n\n#' Create answer strcuture\n#'\n#' @return\n#' @export\n#'\n#' @examples\nanswers_create <- function()\n{\n  answers.dimensions <- c(\n    attitude = 'attitude',\n    time.length = 'time.length',\n    datetime = 'datetime',\n    distance = 'distance'\n  )\n\n  answers <- tibble::data_frame(\n    name.id = character(),\n    choices = list(),\n    size = numeric(), #how many options\n    vector = numeric(),# the sign shows if the values are ascending (+) or decending (-), the value shows how many have positive/negative meaning\n    dimension = character(),\n    choices.translations = list()\n  )\n\n  answers <- answers %>% dplyr::add_row(\n    name.id = 'yes.no',\n    choices =  list(c('Yes','No')),\n    size = 2,\n    vector = -2,\n    dimension = answers.dimensions['attitude'],\n    choices.translations = list(data_frame(\n      language = 'Swedish',\n      translation = list(c('Ja','Nej'))\n    ))\n  )\n  answers <- answers %>% dplyr::add_row(\n    name.id = 'yes.partially.no',\n    choices = list(c('Yes, completely', 'Partially', 'No')),\n    size = 3,\n    vector =-3,\n    dimension = answers.dimensions['attitude'],\n    choices.translations = list(data_frame(\n      language = 'Swedish',\n      translation = list(c('Ja, helt och hållet','Delvis\t','Nej'))\n    ))\n  )\n  answers <- answers %>% dplyr::add_row(\n    name.id = 'yes.no.no_request',\n    choices = list(c('Yes', 'No', 'I had no special request')),\n    size = 3,\n    vector = -2,#-3?\n    dimension = answers.dimensions['attitude'],\n    choices.translations = list(data_frame(\n      language = 'Swedish',\n      translation = list(c('Ja','Helt och Hållet\tDelvis','Nej'))\n    ))\n  )\n  answers <- answers %>% dplyr::add_row(\n    name.id = 'excelent.to.bad.5',\n    choices = list(c('Excellent', 'Very Good', 'Good', 'So So', 'Bad')),\n    size = 5,\n    vector = -5,\n    dimension = answers.dimensions['attitude'],\n    choices.translations = list(data_frame(\n      language = 'Swedish',\n      translation = list(c('Utmärkt','Mycket bra','Bra','Någorlunda','Dålig'))\n    ))\n  )\n  answers <- answers %>% dplyr::add_row(\n    name.id = 'time.length.quarters.4',\n    choices = list(c('0-15 min', '15-30 min', '30-60 min', '60 min or more')),\n    size = 4,\n    vector = 4,\n    dimension = answers.dimensions['time.length'],\n    choices.translations = list(data_frame(\n      language = 'Swedish',\n      translation = list(c('0-15 min','15-30 min','30-60 min','60 min eller mer'))\n    ))\n  )\n  answers <- answers %>% dplyr::add_row(\n    name.id = 'distance.15k.4',\n    choices = list(c('0-5 km', '5-10 km', '10-20 km', '20 km eller längre')),\n    size = 4,\n    vector = 4,\n    dimension = answers.dimensions['distance'],\n    choices.translations = list(data_frame(\n      language = 'Swedish',\n      translation = list(c('0-5 km', '5-10 km', '10-20 km', '20 km eller längre'))\n    ))\n  )\n}\n",
+    "created" : 1502284579489.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3921872156",
+    "id" : "F117CC7B",
+    "lastKnownWriteTime" : 1502721736,
+    "last_content_update" : 1502721736621,
+    "path" : "~/Google Drive/Academics/_my_codes/healthsurveryr/R/answers_create.R",
+    "project_path" : "R/answers_create.R",
+    "properties" : {
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
